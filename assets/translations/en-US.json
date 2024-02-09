@@ -1,0 +1,49 @@
+{
+    "Sunday" : "Sunday",
+    "Monday" : "Monday",
+    "Tuseday" : "Tuseday",
+    "Wensday" : "Wensday",
+    "Thursday" : "Thursday",
+    "Satarday" : "Satarday",
+    "Friday":"Friday",
+    "الاثنين":"Monday",
+    "الثلاثاء":"Tuseday",
+    "الأربعاء":"Wensday",
+    "الخمبس":"Thursday",
+    "السبت":"Satarday",
+    "الجمعة":"Friday",
+    "الأحد":"Sunday",
+    
+    "Today":"Today",
+    "Tommorow":"Tommorow",
+     "Good":"Good",
+    "Unhealthy for sensitive group":"Unhealthy for sensitive group",
+    "Moderate":"Moderate",
+    "Unhealthy":"Unhealthy",
+    "Very Unhealthy":"Very Unhealthy",
+    "Hazardous":"Hazardous",
+    "Air Quality : ":"Air Quality : ",
+    "forcast-3days":"forcast-3days",
+    "Forcast 3 Days":"Forcast 3 Days",
+    "humiditiy":"humiditiy",
+    "chance of rain":"chance of rain",
+    "wind speed":"wind speed",
+    "sunrise":    "sunrise",
+    "moonrise":    "moonrise",
+    "Forcast 24 Hours":"Forcast 24 Hours",
+    "humidity":"humidity",
+    "feels like":"feels like",
+    "pressure":"pressure",
+    "cloud":"cloud",
+    "Sunrise":"Sunrise",
+    "Sunset":"Sunset",
+    "Moonrise":"Moonrise",
+    "Dark Mode":"Dark Mode",
+     "Setting":"Setting",
+     "No moonrise":"not found"
+
+
+   
+    
+    
+}
