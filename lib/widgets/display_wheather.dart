@@ -82,13 +82,13 @@ class DisplayWeather extends StatelessWidget {
               color: Theme.of(context).primaryColor,
               height: 0.5,
               mainAxisAlignment: MainAxisAlignment.center,
-              fontsizeTemp: 0.15,
+              fontsizeTemp: 0.08,
               fontsizedegree: 0.05,
               fontsizeC: 0.05,
-              offsetDegree: -0.09,
-              offsetC: -0.10,
+              offsetDegree: -0.02,
+              offsetC: -0.03,
               elevatedButton: Padding(
-                padding: EdgeInsets.only(top: screenHeight * 0.02),
+                padding: EdgeInsets.only(top: screenHeight * 0.002),
                 child: ElevatedButton(
                   style: ButtonStyle(
                     backgroundColor: Theme.of(context)
@@ -130,6 +130,7 @@ class DisplayWeather extends StatelessWidget {
             ),
 
             //  that second container
+
             Container(
               padding: EdgeInsets.all(screenWidth * 0.03),
               // height: screenHeight * 0.40,
@@ -144,17 +145,17 @@ class DisplayWeather extends StatelessWidget {
                       Icon(
                         Icons.calendar_month_outlined,
                         color: Colors.blueGrey[400],
-                        size: fontsize * 0.03,
+                        size: fontsize * 0.019,
                       ),
                       Text(
                         ui.tr('Forcast 3 Days'),
                         style: TextStyle(
                             color: Colors.blueGrey[400],
-                            fontSize: fontsize * 0.022),
+                            fontSize: fontsize * 0.019),
                       ),
                     ],
                   ),
-                  SizedBox(height: screenHeight * 0.02),
+                  SizedBox(height: screenHeight * 0.012),
                   RowForcastDay(
                     icon: weather.iconFirstDay,
                     maxTemp: weather.maxTempFirstDay,
@@ -185,8 +186,8 @@ class DisplayWeather extends StatelessWidget {
                               .elevatedButtonTheme
                               .style
                               ?.backgroundColor,
-                          foregroundColor:
-                              MaterialStateProperty.all<Color>(Colors.white)),
+                          foregroundColor: const WidgetStatePropertyAll<Color>(
+                              Colors.white)),
                       onPressed: () {
                         Navigator.of(context).push(
                           RightToLeftPageRoute(
@@ -204,7 +205,7 @@ class DisplayWeather extends StatelessWidget {
               ),
             ),
             Container(
-              height: screenHeight * 0.28,
+              height: screenHeight * 0.26,
               margin: EdgeInsets.only(top: screenHeight * 0.01),
               padding: EdgeInsets.only(
                   top: screenHeight * 0.01,
@@ -364,8 +365,8 @@ class DisplayWeather extends StatelessWidget {
                 ],
               ),
             ),
-            //  That is row contain two container
 
+            //  That is row contain two container
             Padding(
               padding: EdgeInsets.only(
                 top: screenHeight * 0.01,
@@ -726,7 +727,7 @@ class DisplayWeather extends StatelessWidget {
             ),
             ElevatedButton(
               style: ButtonStyle(
-                minimumSize: MaterialStatePropertyAll(
+                minimumSize: WidgetStatePropertyAll(
                     Size(double.infinity, screenHeight * 0.06)),
                 backgroundColor: Theme.of(context)
                     .elevatedButtonTheme

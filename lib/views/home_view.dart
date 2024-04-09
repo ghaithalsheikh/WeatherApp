@@ -64,9 +64,6 @@ class _HomeViewState extends State<HomeView> {
 
   dynamic future;
   Future<void> _refreshData() async {
-    // Perform the refresh operation here
-    // You can fetch new data or update existing data
-
     // Delay the completion of the refresh indicator for demonstration purposes
     await Future.delayed(const Duration(seconds: 2));
 

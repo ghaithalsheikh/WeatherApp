@@ -63,7 +63,8 @@ class _DisplayFutureWeatherState extends State<DisplayFutureWeather> {
 
   @override
   Widget build(BuildContext context) {
-    final weatherViewModel = Provider.of<WeatherViewModel>(context);
+    final weatherViewModel =
+        Provider.of<WeatherViewModel>(context, listen: false);
     return FutureBuilder<WeatherModel>(
         future: widget.future ?? future,
         builder: (context, snapshot) {

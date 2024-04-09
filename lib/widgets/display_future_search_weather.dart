@@ -35,7 +35,8 @@ class _DisplayFuturSearcheWeatherState
 
   @override
   Widget build(BuildContext context) {
-    final weatherViewModelSearch = Provider.of<WeatherViewModelSearch>(context);
+    final weatherViewModelSearch =
+        Provider.of<WeatherViewModelSearch>(context, listen: false);
     return FutureBuilder<WeatherModelSearch>(
         future: future,
         builder: (context, snapshot) {

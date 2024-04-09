@@ -8,7 +8,7 @@ class ProviderTheme extends ChangeNotifier {
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
               backgroundColor:
-                  MaterialStatePropertyAll<Color?>(Colors.blueGrey[500]))),
+                  WidgetStatePropertyAll<Color?>(Colors.blueGrey[500]))),
       iconTheme: IconThemeData(color: Colors.blueGrey[800]),
       splashColor: Colors.black,
       dividerColor: Colors.blueGrey[400]);
@@ -19,7 +19,7 @@ class ProviderTheme extends ChangeNotifier {
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
               backgroundColor:
-                  MaterialStatePropertyAll<Color?>(Colors.blueGrey[300]))),
+                  WidgetStatePropertyAll<Color?>(Colors.blueGrey[300]))),
       iconTheme: IconThemeData(
         color: Colors.blueGrey[600],
       ),

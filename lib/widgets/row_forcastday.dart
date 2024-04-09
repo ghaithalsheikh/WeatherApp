@@ -32,22 +32,10 @@ class RowForcastDay extends StatelessWidget {
               SizedBox(height: screenHeight * 0.06, width: screenWidth * 0.15),
           errorWidget: (context, url, error) => const Icon(Icons.error),
         ),
-        // Image.network('https:$icon'),
-        const Spacer(
-          flex: 1,
-        ),
         Text(
-          ui.tr(dayName),
+          '${ui.tr(dayName)}    $weatherStateName',
           style: TextStyle(
-              color: Theme.of(context).splashColor, fontSize: fontsize * 0.02),
-        ),
-        const Spacer(
-          flex: 1,
-        ),
-        Text(
-          weatherStateName,
-          style: TextStyle(
-              color: Theme.of(context).splashColor, fontSize: fontsize * 0.02),
+              color: Theme.of(context).splashColor, fontSize: fontsize * 0.018),
         ),
         const Spacer(
           flex: 8,
@@ -61,7 +49,7 @@ class RowForcastDay extends StatelessWidget {
                   TextSpan(
                     text: (maxTemp).toInt().toString(),
                     style: TextStyle(
-                        fontSize: fontsize * 0.03,
+                        fontSize: fontsize * 0.018,
                         color: Theme.of(context).splashColor),
                   ),
                   WidgetSpan(
@@ -70,19 +58,19 @@ class RowForcastDay extends StatelessWidget {
                           child: Text(
                             '°',
                             style: TextStyle(
-                                fontSize: fontsize * 0.030,
+                                fontSize: fontsize * 0.018,
                                 color: Theme.of(context).splashColor),
                           ))),
                   TextSpan(
                     text: '/',
                     style: TextStyle(
-                        fontSize: fontsize * 0.03,
+                        fontSize: fontsize * 0.018,
                         color: Theme.of(context).splashColor),
                   ),
                   TextSpan(
                     text: (minTemp).toInt().toString(),
                     style: TextStyle(
-                        fontSize: fontsize * 0.03,
+                        fontSize: fontsize * 0.018,
                         color: Theme.of(context).splashColor),
                   ),
                   WidgetSpan(
@@ -91,7 +79,7 @@ class RowForcastDay extends StatelessWidget {
                           child: Text(
                             '°',
                             style: TextStyle(
-                                fontSize: fontsize * 0.030,
+                                fontSize: fontsize * 0.018,
                                 color: Theme.of(context).splashColor),
                           ))),
                 ])),

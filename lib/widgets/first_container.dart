@@ -83,6 +83,7 @@ class Firstcontainer extends StatelessWidget {
                     ),
                   ),
                 ])),
+            SizedBox(height: screenHeight * 0.07),
             Row(
               textDirection: TextDirection.ltr,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -93,16 +94,16 @@ class Firstcontainer extends StatelessWidget {
                       TextSpan(
                         text: (maxTemp).toInt().toString(),
                         style: TextStyle(
-                            fontSize: fontsize * 0.04,
+                            fontSize: fontsize * 0.025,
                             color: Theme.of(context).splashColor),
                       ),
                       WidgetSpan(
                         child: Transform.translate(
-                          offset: Offset(0, -0.01 * screenHeight),
+                          offset: Offset(0, -0.001 * screenHeight),
                           child: Text(
                             '°',
                             style: TextStyle(
-                                fontSize: fontsize * 0.030,
+                                fontSize: fontsize * 0.025,
                                 color: Theme.of(context).splashColor),
                           ),
                         ),
@@ -110,22 +111,22 @@ class Firstcontainer extends StatelessWidget {
                       TextSpan(
                         text: '/',
                         style: TextStyle(
-                            fontSize: fontsize * 0.04,
+                            fontSize: fontsize * 0.03,
                             color: Theme.of(context).splashColor),
                       ),
                       TextSpan(
                         text: (minTemp).toInt().toString(),
                         style: TextStyle(
-                            fontSize: fontsize * 0.04,
+                            fontSize: fontsize * 0.025,
                             color: Theme.of(context).splashColor),
                       ),
                       WidgetSpan(
                         child: Transform.translate(
-                          offset: Offset(0, -0.01 * screenHeight),
+                          offset: Offset(0, -0.001 * screenHeight),
                           child: Text(
                             '°',
                             style: TextStyle(
-                                fontSize: fontsize * 0.030,
+                                fontSize: fontsize * 0.025,
                                 color: Theme.of(context).splashColor),
                           ),
                         ),
@@ -139,7 +140,7 @@ class Firstcontainer extends StatelessWidget {
                         text: weatherStateName,
                         style: TextStyle(
                             color: Theme.of(context).splashColor,
-                            fontSize: fontsize * 0.04),
+                            fontSize: fontsize * 0.025),
                       ),
                     ])),
               ],

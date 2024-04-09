@@ -23,7 +23,7 @@ class ColumnForcastHourWidget extends StatelessWidget {
 
     final fontsize = screenHeight;
     return Padding(
-      padding: EdgeInsets.only(right: screenWidth * 0.025),
+      padding: EdgeInsets.only(right: screenWidth * 0.040),
       child: Column(
         children: [
           RichText(
@@ -32,7 +32,7 @@ class ColumnForcastHourWidget extends StatelessWidget {
                 TextSpan(
                   text: ((tempHour)).toInt().toString(),
                   style: TextStyle(
-                      fontSize: fontsize * 0.03,
+                      fontSize: fontsize * 0.025,
                       color: Theme.of(context).splashColor),
                 ),
                 WidgetSpan(
@@ -41,7 +41,7 @@ class ColumnForcastHourWidget extends StatelessWidget {
                         child: Text(
                           '°',
                           style: TextStyle(
-                              fontSize: fontsize * 0.028,
+                              fontSize: fontsize * 0.025,
                               color: Theme.of(context).splashColor),
                         ))),
               ])),
@@ -50,14 +50,14 @@ class ColumnForcastHourWidget extends StatelessWidget {
             '${windHour}Km/ph',
             style: TextStyle(
               color: Theme.of(context).splashColor,
-              fontSize: fontsize * 0.02,
+              fontSize: fontsize * 0.017,
             ),
           ),
           Text(
             easy.DateFormat.Hm().format(timeHour),
             style: TextStyle(
               color: Theme.of(context).splashColor,
-              fontSize: fontsize * 0.02,
+              fontSize: fontsize * 0.018,
             ),
           ),
         ],
