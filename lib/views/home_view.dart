@@ -10,11 +10,10 @@ import 'package:weather/widgets/animated_nav_right_left.dart';
 import 'package:weather/widgets/dispaly_future_weather.dart';
 
 class HomeView extends StatefulWidget {
-  const HomeView({Key? key}) : super(key: key);
+  const HomeView({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
-  _HomeViewState createState() => _HomeViewState();
+  State<HomeView> createState() => _HomeViewState();
 }
 
 class _HomeViewState extends State<HomeView> {
@@ -129,7 +128,8 @@ class _HomeViewState extends State<HomeView> {
               flex: 4,
             ),
             Text(
-              Provider.of<WeatherViewModel>(context).weather?.regionNAme ?? '',
+              Provider.of<WeatherViewModel>(context).weatherData?.regionNAme ??
+                  '',
               style: TextStyle(
                   color: Theme.of(context).splashColor,
                   fontSize: fontsize * 0.032),

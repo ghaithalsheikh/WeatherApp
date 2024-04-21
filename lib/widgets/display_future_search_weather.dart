@@ -41,7 +41,7 @@ class _DisplayFuturSearcheWeatherState
         future: future,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            weatherViewModelSearch.weather = snapshot.data;
+            weatherViewModelSearch.weatherData = snapshot.data;
             return const ForcastDayViewSearch();
           } else if (snapshot.hasError) {
             return ResultsEmptyView(

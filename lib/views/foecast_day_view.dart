@@ -12,7 +12,7 @@ class ForcastDayView extends StatelessWidget {
     final screensize = MediaQuery.of(context).size;
     final screenHeight = screensize.height;
     final screenWidth = screensize.width;
-    WeatherModel? weather = Provider.of<WeatherViewModel>(context).weather;
+    WeatherModel? weather = Provider.of<WeatherViewModel>(context).weatherData;
     Locale currentLocale = context.locale;
     String currentlang = currentLocale.languageCode;
     return Scaffold(

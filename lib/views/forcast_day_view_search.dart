@@ -15,7 +15,7 @@ class ForcastDayViewSearch extends StatelessWidget {
     final screenHeight = screensize.height;
     final screenWidth = screensize.width;
     WeatherModelSearch? weatherSearch =
-        Provider.of<WeatherViewModelSearch>(context).weather;
+        Provider.of<WeatherViewModelSearch>(context).weatherData;
     Locale currentLocale = context.locale;
     String currentlang = currentLocale.languageCode;
     return Scaffold(

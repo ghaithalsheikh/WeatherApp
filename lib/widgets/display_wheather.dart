@@ -19,7 +19,7 @@ class DisplayWeather extends StatelessWidget {
   // final WeatherModel weather;
   @override
   Widget build(BuildContext context) {
-    WeatherModel? weather = Provider.of<WeatherViewModel>(context).weather;
+    WeatherModel? weather = Provider.of<WeatherViewModel>(context).weatherData;
     final screensize = MediaQuery.of(context).size;
     final screenHeight = screensize.height;
     final screenWidth = screensize.width;

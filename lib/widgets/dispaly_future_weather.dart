@@ -71,7 +71,7 @@ class _DisplayFutureWeatherState extends State<DisplayFutureWeather> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const CircularProgressIndicator();
           } else if (snapshot.hasData) {
-            weatherViewModel.weather = snapshot.data;
+            weatherViewModel.weatherData = snapshot.data;
             return const DisplayWeather();
           } else if (snapshot.data == null) {
             WidgetsBinding.instance.addPostFrameCallback((_) {

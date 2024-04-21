@@ -9,7 +9,7 @@ class AirQualtiyView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    WeatherModel? weather = Provider.of<WeatherViewModel>(context).weather;
+    WeatherModel? weather = Provider.of<WeatherViewModel>(context).weatherData;
     String getAirquailty(int airquailty) {
       Map<int, String> airquailtyMap = {
         1: 'Good',

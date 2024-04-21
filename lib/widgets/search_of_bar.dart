@@ -18,6 +18,11 @@ class _SearchOfBarState extends State<SearchOfBar> {
   final TextEditingController _searchController = TextEditingController();
   bool isTextFieldActive = false;
   ui.TextDirection? _currentTextDirection;
+  @override
+  void dispose() {
+    super.dispose();
+    _searchController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
